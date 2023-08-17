@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhttplib.a 
+/usr/bin/ranlib libhttplib.a

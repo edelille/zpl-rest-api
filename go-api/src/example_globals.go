@@ -1,0 +1,51 @@
+package main
+
+const TEST_ZPL_FILE = `
+^XA
+^RFW,H^FD1112100012011^FS
+^FO20,30
+^A0N,50
+^FDNephron API Warehouse Demo Label
+^FS
+^FO200,100^BY2
+^BCN,100,Y,N,N
+^FDRM-21-00012011^FS
+^FO300,320
+^A0N,30
+^FDSome Material
+^FS
+^FO275,360
+^A0N,30
+^FDSome Manufacturer
+^FS
+^FO225,400
+^A0N,30
+^FDManufacturer Lot No: 76568
+^FS
+^FO210,440
+^A0N,30
+^FDExpiration Date: 10 Oct 2022
+^FS
+^FO185,480
+^A0N,30
+^FDInitial Gross Amcount: 01,000.00g
+^FS
+^FO215,520
+^A0N,30
+^FDReceived: 07/01/2021 20:15
+^FS
+^FO125,700^GB500,200,2^FS
+^FO190,710
+^A0N,30
+^FDReceiving Reference Number
+^FS
+^FO280,750
+^A0N,50
+^FDREF: 03
+^FS
+^FO180,800
+^A0N,50
+^FDOrder No: 3006000
+^FS
+^XZ
+`

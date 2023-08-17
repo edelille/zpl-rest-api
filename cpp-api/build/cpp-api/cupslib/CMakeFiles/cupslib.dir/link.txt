@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -shared -Wl,-soname,libcupslib.so -o libcupslib.so CMakeFiles/cupslib.dir/cupslib.cpp.o  /usr/lib/x86_64-linux-gnu/libcups.so 

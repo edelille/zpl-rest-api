@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -shared -Wl,-soname,libutility.so -o libutility.so CMakeFiles/utility.dir/utility.cpp.o 

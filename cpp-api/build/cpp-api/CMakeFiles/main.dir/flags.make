@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ellie/git/auxline/zpl-server/cpp-api/build -I/home/ellie/git/auxline/zpl-server/cpp-api/api -I/home/ellie/git/auxline/zpl-server/cpp-api/cupslib -I/home/ellie/git/auxline/zpl-server/cpp-api/generatelib -I/home/ellie/git/auxline/zpl-server/cpp-api/httplib -I/home/ellie/git/auxline/zpl-server/cpp-api/jsonlib -I/home/ellie/git/auxline/zpl-server/cpp-api/testing
+CXX_INCLUDES = -I/home/ellie/git/auxline/zpl-server/cpp-api/build -I/home/ellie/git/auxline/zpl-server/cpp-api/api -I/home/ellie/git/auxline/zpl-server/cpp-api/cupslib -I/home/ellie/git/auxline/zpl-server/cpp-api/generatelib -I/home/ellie/git/auxline/zpl-server/cpp-api/httplib -I/home/ellie/git/auxline/zpl-server/cpp-api/jsonlib -I/home/ellie/git/auxline/zpl-server/cpp-api/testing -I/home/ellie/git/auxline/zpl-server/cpp-api/utility
 
 CXX_FLAGS = -std=c++20
 

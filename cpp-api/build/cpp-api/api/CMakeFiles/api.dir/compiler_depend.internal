@@ -4,6 +4,7 @@
 cpp-api/api/CMakeFiles/api.dir/api.cpp.o
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/api/api.cpp
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/cupslib/cupslib.hpp
+ /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/json.h
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/generatelib.hpp
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/httplib.h
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/json.h

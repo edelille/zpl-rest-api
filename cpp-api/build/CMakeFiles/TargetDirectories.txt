@@ -21,3 +21,6 @@
 /home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/testing/CMakeFiles/testing.dir
 /home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/testing/CMakeFiles/edit_cache.dir
 /home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/testing/CMakeFiles/rebuild_cache.dir
+/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/utility/CMakeFiles/utility.dir
+/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/utility/CMakeFiles/edit_cache.dir
+/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/utility/CMakeFiles/rebuild_cache.dir

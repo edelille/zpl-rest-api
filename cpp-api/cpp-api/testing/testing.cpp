@@ -4,6 +4,7 @@
 #include <string>
 #include "./testing.hpp"
 #include "../generatelib/generatelib.hpp"
+#include "../utility/utility.hpp"
 
 namespace testing
 {
@@ -11,7 +12,7 @@ namespace testing
   {
     // We currently want to test the label definition generation
     std::string example_label_fn = "../example/test_label1.zpl";
-    if (!generatelib::file_exists(example_label_fn))
+    if (!utility::file_exists(example_label_fn))
     {
       puts("[sandbox]\tfile does not exist");
     }

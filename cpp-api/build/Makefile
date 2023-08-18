@@ -207,6 +207,19 @@ testing/fast:
 	$(MAKE) $(MAKESILENT) -f cpp-api/testing/CMakeFiles/testing.dir/build.make cpp-api/testing/CMakeFiles/testing.dir/build
 .PHONY : testing/fast
 
+#=============================================================================
+# Target rules for targets named utility
+
+# Build rule for target.
+utility: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utility
+.PHONY : utility
+
+# fast build rule for target.
+utility/fast:
+	$(MAKE) $(MAKESILENT) -f cpp-api/utility/CMakeFiles/utility.dir/build.make cpp-api/utility/CMakeFiles/utility.dir/build
+.PHONY : utility/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +235,7 @@ help:
 	@echo "... jsonlib"
 	@echo "... main"
 	@echo "... testing"
+	@echo "... utility"
 .PHONY : help
 
 

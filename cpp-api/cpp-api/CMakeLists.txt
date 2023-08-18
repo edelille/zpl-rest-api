@@ -5,6 +5,7 @@ add_subdirectory (generatelib)
 add_subdirectory (httplib)
 add_subdirectory (jsonlib)
 add_subdirectory (testing)
+add_subdirectory (utility)
 
 # Add the executable
 add_executable (main main.cpp)
@@ -19,6 +20,7 @@ target_link_libraries (
   cupslib
   httplib
   jsonlib
+  utility
 )
 target_include_directories(
   main PUBLIC
@@ -28,4 +30,5 @@ target_include_directories(
   "${PROJECT_SOURCE_DIR}/generatelib"
   "${PROJECT_SOURCE_DIR}/httplib"
   "${PROJECT_SOURCE_DIR}/jsonlib"
-  "${PROJECT_SOURCE_DIR}/testing")
+  "${PROJECT_SOURCE_DIR}/testing"
+  "${PROJECT_SOURCE_DIR}/utility")

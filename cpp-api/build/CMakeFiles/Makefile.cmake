@@ -17,6 +17,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/CMakeLists.txt"
   "/home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/CMakeLists.txt"
   "/home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/testing/CMakeLists.txt"
+  "/home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/utility/CMakeLists.txt"
   "/usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake"
@@ -54,6 +55,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "cpp-api/httplib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "cpp-api/jsonlib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "cpp-api/testing/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "cpp-api/utility/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -65,4 +67,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "cpp-api/httplib/CMakeFiles/httplib.dir/DependInfo.cmake"
   "cpp-api/jsonlib/CMakeFiles/jsonlib.dir/DependInfo.cmake"
   "cpp-api/testing/CMakeFiles/testing.dir/DependInfo.cmake"
+  "cpp-api/utility/CMakeFiles/utility.dir/DependInfo.cmake"
   )

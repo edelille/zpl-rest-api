@@ -1,0 +1,164 @@
+{
+	"clauses" : 
+	[
+		{
+			"is_field" : true,
+			"subclauses" : 
+			[
+				"FO50,50",
+				"A0N,50",
+				"FB700,1,0,C"
+			]
+		},
+		{
+			"is_field" : true,
+			"subclauses" : 
+			[
+				"RFW,H"
+			]
+		},
+		{
+			"is_field" : true,
+			"subclauses" : 
+			[
+				"FO195,115",
+				"BCN,100,Y,N,N"
+			]
+		},
+		{
+			"is_field" : true,
+			"subclauses" : 
+			[
+				"FO50,290",
+				"A0N,30",
+				"FB700,1,0,C"
+			]
+		},
+		{
+			"is_field" : true,
+			"subclauses" : 
+			[
+				"FO50,335",
+				"A0N,30",
+				"FB700,1,0,C"
+			]
+		},
+		{
+			"is_field" : true,
+			"subclauses" : 
+			[
+				"FO50,380",
+				"A0N,30",
+				"FB700,1,0,C"
+			]
+		},
+		{
+			"is_field" : true,
+			"subclauses" : 
+			[
+				"FO50,425",
+				"A0N,30",
+				"FB700,1,0,C"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO440,850",
+				"GE100,300,10,B"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO430,850",
+				"GB70,300,50,W"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO300,650",
+				"GE177,177,4,B"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO303,653",
+				"GE171,171,100,W"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO400,550",
+				"GE177,177,4,B"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO403,553",
+				"GE171,171,100,W"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO500,650",
+				"GE177,177,4,B"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO503,653",
+				"GE171,171,100,W"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO400,750",
+				"GE177,177,4,B"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO403,753",
+				"GE171,171,100,W"
+			]
+		},
+		{
+			"is_field" : false,
+			"subclauses" : 
+			[
+				"FO435,700",
+				"GE110,100,100,B"
+			]
+		},
+		{
+			"is_field" : true,
+			"subclauses" : 
+			[
+				"FO220,950",
+				"A0N,30"
+			]
+		}
+	],
+	"date_generated" : 1692390831271691542,
+	"error" : false,
+	"field_count" : 8
+}

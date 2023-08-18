@@ -1,4 +1,4 @@
-# Install script for directory: /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api
+# Install script for directory: /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/utility
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,17 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/api/cmake_install.cmake")
-  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/cupslib/cmake_install.cmake")
-  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/generatelib/cmake_install.cmake")
-  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/httplib/cmake_install.cmake")
-  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/jsonlib/cmake_install.cmake")
-  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/testing/cmake_install.cmake")
-  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/cpp-api/utility/cmake_install.cmake")
-
 endif()
 

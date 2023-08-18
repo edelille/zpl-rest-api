@@ -98,6 +98,7 @@ cpp-api/main: cpp-api/generatelib/libgeneratelib.so
 cpp-api/main: cpp-api/cupslib/libcupslib.so
 cpp-api/main: cpp-api/httplib/libhttplib.a
 cpp-api/main: cpp-api/jsonlib/libjsonlib.so
+cpp-api/main: cpp-api/utility/libutility.so
 cpp-api/main: /usr/lib/x86_64-linux-gnu/libcups.so
 cpp-api/main: cpp-api/CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"

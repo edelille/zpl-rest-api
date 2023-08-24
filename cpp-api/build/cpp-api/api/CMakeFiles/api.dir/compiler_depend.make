@@ -7,6 +7,7 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/generatelib.hpp \
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/httplib.h \
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/json.h \
+  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/utility/utility.hpp \
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/api/api.hpp \
   /usr/include/alloca.h \
   /usr/include/arpa/inet.h \
@@ -746,6 +747,10 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
 
 /usr/include/linux/close_range.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/ifaddrs.h:
+
 /usr/include/pthread.h:
 
 /usr/include/c++/12/bits/stl_iterator_base_funcs.h:
@@ -932,6 +937,12 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
 
 /usr/include/c++/12/bits/locale_classes.h:
 
+/usr/include/c++/12/bits/hashtable_policy.h:
+
+/usr/include/c++/12/numbers:
+
+/usr/include/asm-generic/socket.h:
+
 /usr/include/c++/12/atomic:
 
 /usr/include/arpa/nameser.h:
@@ -941,6 +952,8 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
 /usr/include/c++/12/bits/exception.h:
 
 /usr/include/c++/12/bits/locale_facets_nonio.h:
+
+/home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/utility/utility.hpp:
 
 /usr/include/c++/12/stack:
 
@@ -1002,11 +1015,11 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
 
 /usr/include/c++/12/bits/atomic_wait.h:
 
-/home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/generatelib.hpp:
-
 /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/httplib.h:
 
 /usr/include/asm-generic/param.h:
+
+/home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/generatelib.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
@@ -1072,6 +1085,10 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
 
 /usr/include/c++/12/bits/locale_facets_nonio.tcc:
 
+/usr/include/c++/12/map:
+
+/usr/include/c++/12/bits/charconv.h:
+
 /usr/include/c++/12/bits/uses_allocator_args.h:
 
 /usr/include/c++/12/semaphore:
@@ -1079,8 +1096,6 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
 /usr/include/c++/12/bits/concept_check.h:
 
 /usr/include/c++/12/bits/stl_multiset.h:
-
-/usr/include/c++/12/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/12/bits/cxxabi_forced.h:
 
@@ -1154,15 +1169,7 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
 
 /usr/include/endian.h:
 
-/usr/include/asm-generic/socket.h:
-
-/usr/include/c++/12/bits/charconv.h:
-
-/usr/include/c++/12/map:
-
-/usr/include/c++/12/bits/hashtable_policy.h:
-
-/usr/include/c++/12/numbers:
+/usr/include/c++/12/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/12/bits/stl_list.h:
 
@@ -1385,7 +1392,3 @@ cpp-api/api/CMakeFiles/api.dir/api.cpp.o: /home/ellie/git/auxline/zpl-server/cpp
 /usr/include/ctype.h:
 
 /usr/include/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
-/usr/include/ifaddrs.h:

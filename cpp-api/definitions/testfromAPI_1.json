@@ -1,8 +1,13 @@
 {
+	"barcode_count" : 1,
 	"clauses" : 
 	[
 		{
+			"barcode" : false,
+			"centered" : true,
+			"error" : false,
 			"field" : true,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO50,50",
@@ -11,14 +16,22 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : true,
+			"rfid" : true,
 			"subclauses" : 
 			[
 				"RFW,H"
 			]
 		},
 		{
+			"barcode" : true,
+			"centered" : false,
+			"error" : false,
 			"field" : true,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO195,115",
@@ -26,7 +39,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : true,
+			"error" : false,
 			"field" : true,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO50,290",
@@ -35,7 +52,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : true,
+			"error" : false,
 			"field" : true,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO50,335",
@@ -44,7 +65,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : true,
+			"error" : false,
 			"field" : true,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO50,380",
@@ -53,7 +78,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : true,
+			"error" : false,
 			"field" : true,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO50,425",
@@ -62,7 +91,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO440,850",
@@ -70,7 +103,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO430,850",
@@ -78,7 +115,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO300,650",
@@ -86,7 +127,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO303,653",
@@ -94,7 +139,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO400,550",
@@ -102,7 +151,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO403,553",
@@ -110,7 +163,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO500,650",
@@ -118,7 +175,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO503,653",
@@ -126,7 +187,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO400,750",
@@ -134,7 +199,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO403,753",
@@ -142,7 +211,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : false,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO435,700",
@@ -150,7 +223,11 @@
 			]
 		},
 		{
+			"barcode" : false,
+			"centered" : false,
+			"error" : false,
 			"field" : true,
+			"rfid" : false,
 			"subclauses" : 
 			[
 				"FO220,950",
@@ -158,7 +235,8 @@
 			]
 		}
 	],
-	"date_generated" : 1692637796440545720,
+	"date_generated" : 1692815234941254012,
 	"error" : false,
-	"field_count" : 8
+	"field_count" : 8,
+	"rfid_count" : 1
 }

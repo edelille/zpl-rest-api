@@ -6,58 +6,59 @@
 namespace cupslib
 {
   // Static Members
-  http_t *Controller::http; 
-  char *Controller::ipp_resource;
-  cups_dest_t *Controller::dest;
-  cups_dinfo_t *Controller::info;
-  cups_option_t *Controller::options;
-  int Controller::num_options;
+  http_t *Controller::_http; 
+  char Controller::_ipp_resource[IPP_RESOURCE_S];
+  cups_dest_t *Controller::_dest;
+  cups_dinfo_t *Controller::_info;
+  cups_option_t *Controller::_options;
+  int Controller::_num_options;
 
   Controller::Controller() : Controller::Controller("localhost") {}
-  Controller::Controller(std::string url) : url(url) {
+  Controller::Controller(std::string url) : url(url) 
+  {
     // Find a pointer to the inker
     cups_dest_t *dests;
     int num_dests = cupsGetDests(&dests);
-    dest = cupsGetDest(url.c_str(), NULL, num_dests, dests);
+    _dest = cupsGetDest(url.c_str(), NULL, num_dests, dests);
+    if (_dest == nullptr)
+    {
+      std::cout << "dest is a nullptr" << std::endl;
+    }
 
     // Set up a HTTP connection to the inker
-    ipp_resource = new char[IPP_RESOURCE_S]();
-    http = cupsConnectDest( dest, 
-                            CUPS_DEST_FLAGS_DEVICE, 
-                            DEFAULT_TIMEOUT, 
-                            NULL,
-                            ipp_resource, 
-                            sizeof(ipp_resource), 
-                            NULL, 
-                            NULL);
+    if (_http == nullptr)
+      _http = cupsConnectDest(_dest, 
+                              CUPS_DEST_FLAGS_DEVICE, 
+                              DEFAULT_TIMEOUT, 
+                              NULL,
+                              _ipp_resource, 
+                              sizeof(_ipp_resource), 
+                              NULL, 
+                              NULL);
+    if (_http == nullptr)
+    {
+      std::cout << "http is a nullptr" << std::endl;
+    }
 
-    info = cupsCopyDestInfo(http, dest);
+    _info = cupsCopyDestInfo(_http, _dest);
   }
 
   // This is WIP, not quite yet
   int Controller::get_status()
   {
     // Get the connection state
-    http_status_t http_status = httpGetStatus(http);
+    http_status_t http_status = httpGetStatus(_http);
     std::cout << "http_status:\t" << httpStatus(http_status) << '\n';
 
-    puts("did I get here?");
+    // update the info
+    _info = cupsCopyDestInfo(_http, _dest);
 
     // Use default dest connection
     ipp_attribute_t 
     *ready_media = cupsFindDestReady( CUPS_HTTP_DEFAULT,
-                                      dest,
-                                      info, 
+                                      _dest,
+                                      _info, 
                                       CUPS_MEDIA_SOURCE); // Find the correct option?
-    if (ready_media != NULL) 
-    {
-      puts("media is ready");
-      int i, count = ippGetCount(ready_media);
-      for (i = 0; i < count; ++i)
-        std::cout << "media:\t" << ippGetInteger(ready_media, i) << "\n";
-    } else {
-      puts("media is not ready");
-    }
 
     return 0;
   }
@@ -69,30 +70,29 @@ namespace cupslib
     // Initialize the job
     int job_id;
     ipp_status_t 
-    i_status = cupsCreateDestJob( http,
-                                  dest,
-                                  info,
+    i_status = cupsCreateDestJob( _http,
+                                  _dest,
+                                  _info,
                                   &job_id,
                                   "ZebraLabelTitlePending",
-                                  num_options,
-                                  options);
+                                  _num_options,
+                                  _options);
     if (i_status != IPP_STATUS_OK) 
     {
-      printf("[ 1 ]:\tJob creation failed: %d/%s\n", 
-              i_status, cupsLastErrorString());
+      printf("[ 1 ]:\tJob creation failed: %d/%s\n", i_status, cupsLastErrorString());
       return i_status;
     }
 
     // We then add documents to our job
     http_status_t 
-    h_status = cupsStartDestDocument( http,
-                                      dest,
-                                      info,
+    h_status = cupsStartDestDocument( _http,
+                                      _dest,
+                                      _info,
                                       job_id,
-                                      "doc0", // For the sister fn, this will be enumerated
-                                      "",     // Format?
-                                      num_options,
-                                      dest->options,
+                                      "doc0.zpl", // For the sister fn, this will be enumerated
+                                      "text/plain",     // Format?
+                                      _num_options,
+                                      _dest->options,
                                       1);     // int last_document == 1 on last doc in job
     if (h_status != HTTP_STATUS_CONTINUE)
     {
@@ -114,7 +114,7 @@ namespace cupslib
     while ((bytes = fread(buffer, 1, buffer_size, fp)) > 0)
     {
       http_status_t
-      h_status = cupsWriteRequestData(http, buffer, buffer_size);
+      h_status = cupsWriteRequestData(_http, buffer, buffer_size);
       if (h_status != HTTP_STATUS_CONTINUE)
       {
         std::printf("[ 3 ]:\tWrite Request failed: %s\n", cupsLastErrorString());
@@ -122,10 +122,10 @@ namespace cupslib
       }
     }
 
-    i_status = cupsFinishDestDocument(http, dest, info);
+    i_status = cupsFinishDestDocument(_http, _dest, _info);
     if (i_status != IPP_STATUS_OK)
     {
-      std::printf("[ 4 ]:\tFinish Dest Document failed: %s\n", cupsLastErrorString());
+      std::printf("[ 4 ]:\tFinish Dest Document failed: %s\n", ippErrorString(i_status));
     }
 
     return 0;

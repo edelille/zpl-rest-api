@@ -2,6 +2,7 @@
 	"clauses" : 
 	[
 		{
+			"centered" : true,
 			"field" : true,
 			"subclauses" : 
 			[
@@ -11,13 +12,7 @@
 			]
 		},
 		{
-			"field" : true,
-			"subclauses" : 
-			[
-				"RFW,H"
-			]
-		},
-		{
+			"centered" : false,
 			"field" : true,
 			"subclauses" : 
 			[
@@ -26,6 +21,7 @@
 			]
 		},
 		{
+			"centered" : true,
 			"field" : true,
 			"subclauses" : 
 			[
@@ -35,6 +31,7 @@
 			]
 		},
 		{
+			"centered" : true,
 			"field" : true,
 			"subclauses" : 
 			[
@@ -44,6 +41,7 @@
 			]
 		},
 		{
+			"centered" : true,
 			"field" : true,
 			"subclauses" : 
 			[
@@ -53,6 +51,7 @@
 			]
 		},
 		{
+			"centered" : true,
 			"field" : true,
 			"subclauses" : 
 			[
@@ -62,6 +61,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -70,6 +70,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -78,6 +79,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -86,6 +88,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -94,6 +97,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -102,6 +106,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -110,6 +115,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -118,6 +124,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -126,6 +133,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -134,6 +142,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -142,6 +151,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : false,
 			"subclauses" : 
 			[
@@ -150,6 +160,7 @@
 			]
 		},
 		{
+			"centered" : false,
 			"field" : true,
 			"subclauses" : 
 			[
@@ -158,7 +169,7 @@
 			]
 		}
 	],
-	"date_generated" : 1692637796440545720,
+	"date_generated" : 1692795991090222054,
 	"error" : false,
-	"field_count" : 8
+	"field_count" : 7
 }

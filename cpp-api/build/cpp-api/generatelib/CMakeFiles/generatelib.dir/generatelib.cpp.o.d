@@ -224,5 +224,34 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o: \
  /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/deque \
  /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
  /usr/include/c++/12/stack /usr/include/c++/12/bits/stl_stack.h \
- /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/../utility/utility.hpp \
- /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/../jsonlib/json.h
+ /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/../cupslib/cupslib.hpp \
+ /usr/include/cups/cups.h /usr/include/cups/file.h \
+ /usr/include/cups/versioning.h /usr/include/cups/ipp.h \
+ /usr/include/cups/http.h /usr/include/cups/array.h \
+ /usr/include/c++/12/stdlib.h /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+ /usr/include/netdb.h /usr/include/netinet/in.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/rpc/netdb.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/arpa/inet.h \
+ /usr/include/netinet/in_systm.h /usr/include/netinet/ip.h \
+ /usr/include/netinet/tcp.h /usr/include/x86_64-linux-gnu/sys/un.h \
+ /usr/include/cups/language.h /usr/include/cups/pwg.h \
+ /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/../jsonlib/json.h \
+ /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/../utility/utility.hpp

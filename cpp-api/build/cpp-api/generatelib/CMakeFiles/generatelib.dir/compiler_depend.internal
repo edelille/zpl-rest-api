@@ -3,13 +3,19 @@
 
 cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/generatelib.cpp
+ /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/cupslib/cupslib.hpp
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/json.h
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/utility/utility.hpp
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/json.h
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/generatelib/generatelib.hpp
  /usr/include/alloca.h
+ /usr/include/arpa/inet.h
+ /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/asm-generic/socket.h
+ /usr/include/asm-generic/sockios.h
  /usr/include/c++/12/array
  /usr/include/c++/12/backward/auto_ptr.h
  /usr/include/c++/12/backward/binders.h
@@ -158,6 +164,7 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /usr/include/c++/12/sstream
  /usr/include/c++/12/stack
  /usr/include/c++/12/stdexcept
+ /usr/include/c++/12/stdlib.h
  /usr/include/c++/12/streambuf
  /usr/include/c++/12/string
  /usr/include/c++/12/string_view
@@ -167,6 +174,14 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /usr/include/c++/12/typeinfo
  /usr/include/c++/12/vector
  /usr/include/ctype.h
+ /usr/include/cups/array.h
+ /usr/include/cups/cups.h
+ /usr/include/cups/file.h
+ /usr/include/cups/http.h
+ /usr/include/cups/ipp.h
+ /usr/include/cups/language.h
+ /usr/include/cups/pwg.h
+ /usr/include/cups/versioning.h
  /usr/include/endian.h
  /usr/include/errno.h
  /usr/include/features-time64.h
@@ -176,8 +191,16 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
  /usr/include/linux/limits.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
  /usr/include/locale.h
+ /usr/include/netdb.h
+ /usr/include/netinet/in.h
+ /usr/include/netinet/in_systm.h
+ /usr/include/netinet/ip.h
+ /usr/include/netinet/tcp.h
  /usr/include/pthread.h
+ /usr/include/rpc/netdb.h
  /usr/include/sched.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
@@ -190,7 +213,12 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /usr/include/unistd.h
  /usr/include/wchar.h
  /usr/include/wctype.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
  /usr/include/x86_64-linux-gnu/asm/errno.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/x86_64-linux-gnu/asm/socket.h
+ /usr/include/x86_64-linux-gnu/asm/sockios.h
  /usr/include/x86_64-linux-gnu/asm/unistd.h
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
@@ -205,10 +233,12 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/in.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/local_lim.h
  /usr/include/x86_64-linux-gnu/bits/locale.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
+ /usr/include/x86_64-linux-gnu/bits/netdb.h
  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h
@@ -218,6 +248,9 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /usr/include/x86_64-linux-gnu/bits/sched.h
  /usr/include/x86_64-linux-gnu/bits/select.h
  /usr/include/x86_64-linux-gnu/bits/setjmp.h
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h
+ /usr/include/x86_64-linux-gnu/bits/socket.h
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
@@ -238,16 +271,20 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
@@ -285,8 +322,11 @@ cpp-api/generatelib/CMakeFiles/generatelib.dir/generatelib.cpp.o
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h
+ /usr/include/x86_64-linux-gnu/sys/socket.h
  /usr/include/x86_64-linux-gnu/sys/syscall.h
+ /usr/include/x86_64-linux-gnu/sys/time.h
  /usr/include/x86_64-linux-gnu/sys/types.h
+ /usr/include/x86_64-linux-gnu/sys/un.h
  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h

@@ -5,6 +5,7 @@
 		{
 			"barcode" : false,
 			"centered" : true,
+			"data" : true,
 			"error" : false,
 			"field" : true,
 			"rfid" : false,
@@ -18,8 +19,9 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : true,
 			"error" : false,
-			"field" : true,
+			"field" : false,
 			"rfid" : true,
 			"subclauses" : 
 			[
@@ -29,8 +31,9 @@
 		{
 			"barcode" : true,
 			"centered" : false,
+			"data" : true,
 			"error" : false,
-			"field" : true,
+			"field" : false,
 			"rfid" : false,
 			"subclauses" : 
 			[
@@ -41,6 +44,7 @@
 		{
 			"barcode" : false,
 			"centered" : true,
+			"data" : true,
 			"error" : false,
 			"field" : true,
 			"rfid" : false,
@@ -54,6 +58,7 @@
 		{
 			"barcode" : false,
 			"centered" : true,
+			"data" : true,
 			"error" : false,
 			"field" : true,
 			"rfid" : false,
@@ -67,6 +72,7 @@
 		{
 			"barcode" : false,
 			"centered" : true,
+			"data" : true,
 			"error" : false,
 			"field" : true,
 			"rfid" : false,
@@ -80,6 +86,7 @@
 		{
 			"barcode" : false,
 			"centered" : true,
+			"data" : true,
 			"error" : false,
 			"field" : true,
 			"rfid" : false,
@@ -93,6 +100,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -105,6 +113,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -117,6 +126,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -129,6 +139,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -141,6 +152,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -153,6 +165,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -165,6 +178,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -177,6 +191,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -189,6 +204,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -201,6 +217,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -213,6 +230,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : false,
 			"error" : false,
 			"field" : false,
 			"rfid" : false,
@@ -225,6 +243,7 @@
 		{
 			"barcode" : false,
 			"centered" : false,
+			"data" : true,
 			"error" : false,
 			"field" : true,
 			"rfid" : false,
@@ -235,8 +254,8 @@
 			]
 		}
 	],
-	"date_generated" : 1692815234941254012,
+	"date_generated" : 1692972692280645545,
 	"error" : false,
-	"field_count" : 8,
+	"field_count" : 6,
 	"rfid_count" : 1
 }

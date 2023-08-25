@@ -24,10 +24,8 @@ namespace Api
     server.Get("/", Api::handle_noargs);
     server.Get("/status", Api::handle_status);
     server.Get("/stop", Api::handle_stop);
-    server.Post("/mirror", Api::handle_mirror);
-    server.Post("/test/print", Api::handle_test_print);
-    server.Post("/test/label", Api::handle_test_label_generate);
-    server.Post("/test/definition", Api::handle_test_definition_generate);
+    server.Post("/print", Api::handle_print);
+    server.Post("/definition", Api::handle_definition_generate);
   }
 
   // This is to be called to start the server which will also block the runtime
@@ -62,44 +60,7 @@ namespace Api
     // server.stop();
   }
 
-  void Api::handle_mirror(const httplib::Request& req, httplib::Response& res, const httplib::ContentReader& content_reader)
-  {
-    std::string body;
-    content_reader([&](const char* data, size_t data_length) {
-      body.append(data, data_length);
-      return true;
-    });
-
-    std::cout << "Mirror str: " << body << std::endl;
-  }
-
-  // This will ink with whatever is currently the test label
-  void Api::handle_test_print(const httplib::Request& req, httplib::Response& res, const httplib::ContentReader& content_reader)
-  {
-    Json::Value inp;
-    Json::Reader reader;
-    content_reader([&](const char* data, size_t data_length) {
-      bool parsingSuccess = reader.parse(data, inp);
-      if ( !parsingSuccess ) {
-        std::printf("[ Error ]: There was an error while parsing string: %s\n", data);
-        // Return an error
-        return false;
-      }
-      return true;
-    });
-
-    // Build the response
-    Json::Value ret;
-    Json::StreamWriterBuilder builder; 
-    ret["success"] = true;
-    ret["message"] = "The Label was printed correctly";
-    ret["readback"] = inp;
-    res.set_content(Json::writeString(builder, ret), "application/json");
-
-    return; 
-  }
-
-  void Api::handle_test_label_generate(const httplib::Request& req, httplib::Response& res, const httplib::ContentReader& content_reader)
+  void Api::handle_print(const httplib::Request& req, httplib::Response& res, const httplib::ContentReader& content_reader)
   {
     Json::Value inp;
     Json::Reader reader;
@@ -181,9 +142,11 @@ namespace Api
 
 
     // Grab the data and then push it to print
-    std::vector<std::string> data;
+    std::vector<std::string> data, barcode, rfid;
     for (size_t i=0; i<inp["data"].size(); ++i) data.push_back(inp["data"][int(i)].asString());
-    int status = generatelib::print_label(def, data);
+    for (size_t i=0; i<inp["barcode"].size(); ++i) barcode.push_back(inp["barcode"][int(i)].asString());
+    for (size_t i=0; i<inp["rfid"].size(); ++i) rfid.push_back(inp["rfid"][int(i)].asString());
+    int status = generatelib::print_label(def, data, barcode, rfid);
     if (status != 0)
     {
       res.status = 400;
@@ -200,7 +163,7 @@ namespace Api
     res.set_content(Json::writeString(builder, ret), "application/json");
   }
 
-  void Api::handle_test_definition_generate(const httplib::Request& req, httplib::Response& res, const httplib::ContentReader& content_reader)
+  void Api::handle_definition_generate(const httplib::Request& req, httplib::Response& res, const httplib::ContentReader& content_reader)
   {
     Json::Value inp;
     Json::Reader reader;

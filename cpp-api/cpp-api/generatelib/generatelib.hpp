@@ -33,6 +33,7 @@ namespace generatelib
       int load(const Json::Value json);
       bool is_barcode() const;
       bool is_centered() const;
+      bool is_data() const;
       bool is_error() const;
       bool is_field() const;
       bool is_rfid() const;
@@ -44,6 +45,7 @@ namespace generatelib
     private:
       bool _barcode;
       bool _centered;
+      bool _data;
       bool _error;
       bool _field;
       bool _rfid;
@@ -51,7 +53,6 @@ namespace generatelib
       std::vector<std::string> _base_subclauses;
   };
   inline std::ostream& operator<<(std::ostream& os, DefinitionClause const& v);
-
   
   class Definition
   {
@@ -84,7 +85,7 @@ namespace generatelib
   };
   inline std::ostream& operator<<(std::ostream& os, Definition const& v);
 
-  int print_label(const Definition& definition, const std::vector<std::string> data);
+  int print_label(const Definition& definition, const std::vector<std::string> data, const std::vector<std::string> barcode, const std::vector<std::string> rfid);
   int label_definition(const std::string type, const std::string raw, bool overwrite=false);
 }
 

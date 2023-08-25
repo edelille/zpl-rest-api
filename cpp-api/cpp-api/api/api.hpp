@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include "../cupslib/cupslib.hpp"
+#include "../jsonlib/json.h"
 #include "../httplib/httplib.h"
 
 #define STATUS_DOWN 0
@@ -22,17 +23,15 @@ namespace Api
       int status();
       int start();
     protected:
-      static void handle_noargs(const httplib::Request&, httplib::Response&);
-      static void handle_status(const httplib::Request&, httplib::Response&);
-      static void handle_stop(const httplib::Request&, httplib::Response&);
-      static void handle_mirror(const httplib::Request&, httplib::Response&, const httplib::ContentReader&);
-      static void handle_test_print(const httplib::Request&, httplib::Response&, const httplib::ContentReader&);
-      static void handle_test_label_generate(const httplib::Request&, httplib::Response&, const httplib::ContentReader&);
-      static void handle_test_definition_generate(const httplib::Request&, httplib::Response&, const httplib::ContentReader&);
-    private:
       httplib::Server server;
       static cupslib::Controller controller;
       std::vector<std::string> endpoints;
+      static void handle_noargs(const httplib::Request&, httplib::Response&);
+      static void handle_status(const httplib::Request&, httplib::Response&);
+      static void handle_stop(const httplib::Request&, httplib::Response&);
+      static void handle_print(const httplib::Request&, httplib::Response&, const httplib::ContentReader&);
+      static void handle_definition_generate(const httplib::Request&, httplib::Response&, const httplib::ContentReader&);
+    private:
   };
   
   void log_request(std::string func_name, std::string req_type, int result);

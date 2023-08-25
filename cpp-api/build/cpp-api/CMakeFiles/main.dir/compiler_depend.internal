@@ -5,6 +5,7 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/main.cpp
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/cupslib/cupslib.hpp
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/httplib.h
+ /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/json.h
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/api/api.hpp
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/cupslib/cupslib.hpp
  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/httplib.h
@@ -169,6 +170,7 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o
  /usr/include/c++/12/concepts
  /usr/include/c++/12/condition_variable
  /usr/include/c++/12/csignal
+ /usr/include/c++/12/cstddef
  /usr/include/c++/12/cstdint
  /usr/include/c++/12/cstdio
  /usr/include/c++/12/cstdlib

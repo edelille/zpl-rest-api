@@ -4,6 +4,7 @@
 cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/main.cpp \
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/cupslib/cupslib.hpp \
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/httplib.h \
+  /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/json.h \
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/api/api.hpp \
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/cupslib/cupslib.hpp \
   /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/httplib.h \
@@ -168,6 +169,7 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
   /usr/include/c++/12/concepts \
   /usr/include/c++/12/condition_variable \
   /usr/include/c++/12/csignal \
+  /usr/include/c++/12/cstddef \
   /usr/include/c++/12/cstdint \
   /usr/include/c++/12/cstdio \
   /usr/include/c++/12/cstdlib \
@@ -743,8 +745,6 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 
 /usr/include/linux/close_range.h:
 
-/usr/include/c++/12/bits/stl_list.h:
-
 /usr/include/pthread.h:
 
 /usr/include/c++/12/bits/stl_iterator_base_funcs.h:
@@ -781,6 +781,10 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 
 /usr/include/c++/12/bits/specfun.h:
 
+/usr/include/libintl.h:
+
+/usr/include/c++/12/bits/sstream.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/12/cstdlib:
@@ -798,10 +802,6 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 /usr/include/c++/12/pstl/glue_memory_defs.h:
 
 /usr/include/c++/12/bits/refwrap.h:
-
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
-
-/usr/include/c++/12/cerrno:
 
 /usr/include/c++/12/stdlib.h:
 
@@ -864,6 +864,12 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 /usr/include/c++/12/bits/regex_executor.tcc:
 
 /usr/include/c++/12/bits/deque.tcc:
+
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/c++/12/cerrno:
+
+/usr/include/c++/12/cstddef:
 
 /usr/include/cups/http.h:
 
@@ -961,25 +967,17 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 
 /usr/include/asm-generic/errno-base.h:
 
+/home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/jsonlib/json.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/limits.h:
+
+/usr/include/c++/12/bits/alloc_traits.h:
+
 /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/httplib/httplib.h:
 
 /usr/include/asm-generic/param.h:
-
-/usr/include/c++/12/bits/nested_exception.h:
-
-/usr/include/c++/12/bits/allocated_ptr.h:
-
-/usr/include/c++/12/bits/ios_base.h:
-
-/usr/include/c++/12/set:
-
-/usr/include/c++/12/bits/this_thread_sleep.h:
-
-/usr/include/c++/12/cassert:
-
-/usr/include/c++/12/bits/erase_if.h:
-
-/usr/include/c++/12/bits/atomic_timed_wait.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h:
 
@@ -1009,10 +1007,6 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 
 /usr/include/c++/12/initializer_list:
 
-/usr/include/c++/12/algorithm:
-
-/usr/include/c++/12/bits/random.tcc:
-
 /usr/include/alloca.h:
 
 /usr/include/c++/12/bits/regex_compiler.tcc:
@@ -1020,16 +1014,6 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/c++/12/random:
-
-/usr/include/fcntl.h:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h:
-
-/usr/include/c++/12/bits/atomic_base.h:
-
-/usr/include/arpa/nameser_compat.h:
-
-/usr/include/arpa/inet.h:
 
 /usr/include/c++/12/thread:
 
@@ -1050,6 +1034,34 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 /usr/include/c++/12/bits/istream.tcc:
 
 /usr/include/asm-generic/errno.h:
+
+/usr/include/c++/12/bits/ios_base.h:
+
+/usr/include/c++/12/set:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h:
+
+/usr/include/c++/12/bits/atomic_base.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/arpa/nameser_compat.h:
+
+/usr/include/c++/12/bits/this_thread_sleep.h:
+
+/usr/include/c++/12/cassert:
+
+/usr/include/c++/12/bits/nested_exception.h:
+
+/usr/include/c++/12/bits/allocated_ptr.h:
+
+/usr/include/c++/12/bits/random.tcc:
+
+/usr/include/c++/12/algorithm:
+
+/usr/include/c++/12/bits/erase_if.h:
+
+/usr/include/c++/12/bits/atomic_timed_wait.h:
 
 /usr/include/x86_64-linux-gnu/bits/socket_type.h:
 
@@ -1094,10 +1106,6 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 /usr/include/c++/12/bits/vector.tcc:
 
 /usr/include/c++/12/ext/string_conversions.h:
-
-/usr/include/c++/12/bits/alloc_traits.h:
-
-/usr/include/limits.h:
 
 /home/ellie/git/auxline/zpl-server/cpp-api/cpp-api/api/api.hpp:
 
@@ -1156,6 +1164,8 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 /usr/include/c++/12/bits/hashtable_policy.h:
 
 /usr/include/c++/12/numbers:
+
+/usr/include/c++/12/bits/stl_list.h:
 
 /usr/include/c++/12/bits/stl_map.h:
 
@@ -1380,7 +1390,3 @@ cpp-api/CMakeFiles/main.dir/main.cpp.o: /home/ellie/git/auxline/zpl-server/cpp-a
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/ifaddrs.h:
-
-/usr/include/c++/12/bits/sstream.tcc:
-
-/usr/include/libintl.h:

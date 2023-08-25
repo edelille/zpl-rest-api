@@ -11,6 +11,8 @@
 #include "../jsonlib/json.h"
 #include "../utility/utility.hpp"
 
+//#define PRINT_ENABLED
+
 namespace generatelib
 {
   DefinitionClause::DefinitionClause() {};
@@ -33,12 +35,16 @@ namespace generatelib
       if (x.starts_with(DEF_SCL_CENTERED_C)) { _centered = true; }
       if (x.starts_with(DEF_SCL_RFID_C)) { _rfid = true; }
       _base_subclauses.push_back(x);
-    }  
+    }
+    _data = _barcode | _field | _rfid;
+    _field = _field & ~(_barcode | _rfid);
   };
   DefinitionClause::DefinitionClause(const Json::Value json) { DefinitionClause::load(json); }
   int DefinitionClause::load(Json::Value json) 
   { 
+    _barcode = json["barcode"].asBool();
     _centered = json["centered"].asBool();
+    _data = json["data"].asBool();
     _error = json["error"].asBool();
     _field = json["field"].asBool();
     _rfid = json["rfid"].asBool();
@@ -51,6 +57,7 @@ namespace generatelib
   }
   bool DefinitionClause::is_barcode() const { return _barcode; }
   bool DefinitionClause::is_centered() const { return _centered; }
+  bool DefinitionClause::is_data() const { return _data; }
   bool DefinitionClause::is_error() const { return _error; }
   bool DefinitionClause::is_field() const { return _field; }
   bool DefinitionClause::is_rfid() const { return _rfid; }
@@ -60,11 +67,11 @@ namespace generatelib
   std::string DefinitionClause::out(const std::string s) const
   {
     std::string res;
-    // TODO TRYONCE MAY NOT BE THE WAY WE WOULD WANT TO IMPLEMENT THIS ALWAYS
+    // TODO TRYONCE MAY NOT BE THE WAY WE WOU
     if (_rfid) { res += DEF_SCL_RFID_TRYONCE_C; }
     for (const std::string& x : _base_subclauses) { res += DEF_SCL_DELIM_C + x; }
-    if (_field) { res += DEF_SCL_DELIM_C DEF_SCL_FIELD_C + s; }
-    if (_field && _centered) { res += DEF_SCL_CENTERED_ADD_C; }
+    if (_data) { res += DEF_SCL_DELIM_C DEF_SCL_FIELD_C + s; }
+    if (_data && _centered) { res += DEF_SCL_CENTERED_ADD_C; }
     res += DEF_CLAUSE_DELIM_C;
     return res;
   }
@@ -127,6 +134,7 @@ namespace generatelib
       Json::Value clause;
       clause["barcode"] = x.is_barcode();
       clause["centered"] = x.is_centered();
+      clause["data"] = x.is_data();
       clause["error"] = x.is_error();
       clause["field"] = x.is_field();
       clause["rfid"] = x.is_rfid();
@@ -193,12 +201,15 @@ namespace generatelib
     res += DEF_INIT_C;
     for (const DefinitionClause& x : _clauses)
     {
-      if (x.is_barcode() && barcode_i < _barcode_count && barcode_i < ss.size())
-        res += x.out(ss[barcode_i++]);
+      if (x.is_barcode() && barcode_i < _barcode_count && barcode_i < bs.size())
+      {
+        std::cout << "did I get here??" << std::endl;
+        res += x.out(bs[barcode_i++]);
+      }
       else if (x.is_field() && fields_i < _field_count && fields_i < ss.size())
         res += x.out(ss[fields_i++]);
-      else if (x.is_rfid() && rfid_i < _rfid_count && rfid_i < ss.size())
-        res += x.out(ss[rfid_i++]);
+      else if (x.is_rfid() && rfid_i < _rfid_count && rfid_i < rs.size())
+        res += x.out(rs[rfid_i++]);
       else
         res += x.out();
     }
@@ -208,10 +219,10 @@ namespace generatelib
   std::ostream& operator<<(std::ostream& os, Definition const& v) { os << v.out(); return os; }
 
   // Retrieves a definition file and then prints the label as is
-  int print_label(const Definition& def, const std::vector<std::string> data) 
+  int print_label(const Definition& def, const std::vector<std::string> data, const std::vector<std::string> barcode, const std::vector<std::string> rfid) 
   {
     std::ofstream ofs(DEFAULT_CACHED_ZPL1_FN);
-    ofs << def.out(data);
+    ofs << def.out(data, barcode, rfid);
     ofs.close();
     std::cout << "Successfully wrote definition to " << DEFAULT_CACHED_ZPL1_FN << "\n";
 
@@ -224,12 +235,16 @@ namespace generatelib
       return 1;
     }
 
+  #ifdef PRINT_ENABLED
     status = cups.create_zebra_label_1();
     if (status != 0)
     {
       std::cout << "There was an error printing the zebra label" << std::endl;
       return 1;
     }
+  #else
+    std::cout << "Print was disabled for this run" << std::endl;
+  #endif /* PRINT_ENABLED */
 
     return 0;
   }

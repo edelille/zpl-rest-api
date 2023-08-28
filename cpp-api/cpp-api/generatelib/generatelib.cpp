@@ -203,7 +203,6 @@ namespace generatelib
     {
       if (x.is_barcode() && barcode_i < _barcode_count && barcode_i < bs.size())
       {
-        std::cout << "did I get here??" << std::endl;
         res += x.out(bs[barcode_i++]);
       }
       else if (x.is_field() && fields_i < _field_count && fields_i < ss.size())
@@ -235,16 +234,12 @@ namespace generatelib
       return 1;
     }
 
-  #ifdef PRINT_ENABLED
     status = cups.create_zebra_label_1();
     if (status != 0)
     {
       std::cout << "There was an error printing the zebra label" << std::endl;
       return 1;
     }
-  #else
-    std::cout << "Print was disabled for this run" << std::endl;
-  #endif /* PRINT_ENABLED */
 
     return 0;
   }

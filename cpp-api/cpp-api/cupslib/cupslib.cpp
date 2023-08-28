@@ -12,6 +12,7 @@ namespace cupslib
   cups_dinfo_t *Controller::_info;
   cups_option_t *Controller::_options;
   int Controller::_num_options;
+  bool Controller::_print_disabled;
 
   Controller::Controller() : Controller::Controller("localhost") {}
   Controller::Controller(std::string url) : url(url) 
@@ -20,10 +21,6 @@ namespace cupslib
     cups_dest_t *dests;
     int num_dests = cupsGetDests(&dests);
     _dest = cupsGetDest(url.c_str(), NULL, num_dests, dests);
-    if (_dest == nullptr)
-    {
-      std::cout << "dest is a nullptr" << std::endl;
-    }
 
     // Set up a HTTP connection to the inker
     if (_http == nullptr)
@@ -35,10 +32,6 @@ namespace cupslib
                               sizeof(_ipp_resource), 
                               NULL, 
                               NULL);
-    if (_http == nullptr)
-    {
-      std::cout << "http is a nullptr" << std::endl;
-    }
 
     _info = cupsCopyDestInfo(_http, _dest);
   }
@@ -48,7 +41,6 @@ namespace cupslib
   {
     // Get the connection state
     http_status_t http_status = httpGetStatus(_http);
-    std::cout << "http_status:\t" << httpStatus(http_status) << '\n';
 
     // update the info
     _info = cupsCopyDestInfo(_http, _dest);
@@ -67,6 +59,12 @@ namespace cupslib
   int Controller::create_zebra_label_1() { return Controller::create_zebra_label_1(DEFAULT_CACHED_ZPL1_FN); }
   int Controller::create_zebra_label_1(std::string filename)
   {
+    // if print is disabled, we can just skip printing and return a success node
+    if (_print_disabled)
+    {
+      std::cout << "NOTE: Printing has been disabled for this controller\n";
+      return 1;
+    }
     // Initialize the job
     int job_id;
     ipp_status_t 

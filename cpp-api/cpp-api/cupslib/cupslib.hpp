@@ -27,6 +27,7 @@ namespace cupslib
       static cups_dinfo_t *_info; 
       static cups_option_t *_options;
       static int _num_options;
+      static bool _print_disabled;
   };
 
   struct ControllerStatus

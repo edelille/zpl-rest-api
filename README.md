@@ -42,3 +42,4 @@ This is a project to detail a rest server to handle prints using Zebra printers 
 - More robust error checking (v0.1.x)
 - CUPS server management (v0.1.x)
 - Connection tracking (v0.1.x)
+- Connecting to remote CUPS server (v0.1.0)

@@ -33,13 +33,20 @@ This is a project to detail a rest server to handle prints using Zebra printers 
 ```
 - Protection features to printer
     - LIMIT 1 attempt on any label
-    Usually, Zebra would attempt 3 times upon failed RFID write.
+        - Usually, Zebra would attempt 3 times upon failed RFID write.
     - Static and Explicit requirements for each label
-    Each label will have a certain amount of fields, for the label above, we have 6/1/1 [standard/barcodes/rfid] fields. The `/print` endpoint will not print unless the explicit requirements are met.
+        - Each label will have a certain amount of fields, for the label above, we have 6/1/1 [standard/barcodes/rfid] fields. The `/print` endpoint will not print unless the explicit requirements are met.
+
+# Installation and Runtime
+- TODO
+
+This may be pretty difficult to standardize.
+
 
 # Planned features
-- Logging engine (v0.1.x) 
-- More robust error checking (v0.1.x)
-- CUPS server management (v0.1.x)
-- Connection tracking (v0.1.x)
-- Connecting to remote CUPS server (v0.1.0)
+- #1 - Logging engine (v0.1.x) 
+- #2 - More robust error checking (v0.1.x)
+- #3 - CUPS server management (v0.1.x)
+- #4 - Connection tracking (v0.1.x)
+- #5 - Connecting to remote CUPS server (v0.1.0)
+- #6 - Desktop Application (v0.1.0)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ellie/git/auxline/zpl-server/cpp-api
+# Install script for directory: /home/ellie/git/auxline/zpl-server/cpp-api/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,17 +44,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/src/cmake_install.cmake")
+  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/src/api/cmake_install.cmake")
+  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/src/cupslib/cmake_install.cmake")
+  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/src/generatelib/cmake_install.cmake")
+  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/src/httplib/cmake_install.cmake")
+  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/src/jsonlib/cmake_install.cmake")
+  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/src/testing/cmake_install.cmake")
+  include("/home/ellie/git/auxline/zpl-server/cpp-api/build/src/utility/cmake_install.cmake")
 
 endif()
 
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ellie/git/auxline/zpl-server/cpp-api/build/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

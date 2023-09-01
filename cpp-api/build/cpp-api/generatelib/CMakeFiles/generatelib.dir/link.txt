@@ -1,1 +1,0 @@
-/usr/bin/g++ -fPIC -shared -Wl,-soname,libgeneratelib.so -o libgeneratelib.so CMakeFiles/generatelib.dir/generatelib.cpp.o 

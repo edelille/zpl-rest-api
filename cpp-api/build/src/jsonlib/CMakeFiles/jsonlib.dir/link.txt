@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libjsonlib.so -o libjsonlib.so CMakeFiles/jsonlib.dir/jsoncpp.cpp.o 

@@ -28,7 +28,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/g++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -213,14 +213,11 @@ CPP_API_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CPP_API_SOURCE_DIR:STATIC=/home/ellie/git/auxline/zpl-server/cpp-api
 
-//The Common Unix Printing System include directory
+//Path to a file.
 CUPS_INCLUDE_DIR:PATH=/usr/include
 
-//The Common Unix Printing System Library
+//Path to a library.
 CUPS_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libcups.so
-
-//The Common Unix Printing System Library
-CUPS_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcups.so
 
 //Dependencies for the target
 cupslib_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libcups.so;
@@ -359,8 +356,6 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Have library cups
-CUPS_HAS_IPP_DELETE_ATTRIBUTE:INTERNAL=
 //ADVANCED property for variable: CUPS_INCLUDE_DIR
 CUPS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUPS_LIBRARIES

@@ -1,1 +1,0 @@
-/usr/bin/g++ -fPIC -shared -Wl,-soname,libapi.so -o libapi.so CMakeFiles/api.dir/api.cpp.o 

@@ -63,370 +63,370 @@ CMAKE_BINARY_DIR = /home/ellie/git/auxline/zpl-server/cpp-api/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: cpp-api/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: cpp-api/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: cpp-api/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory cpp-api
+# Directory level rules for directory src
 
 # Recursive "all" directory target.
-cpp-api/all: cpp-api/CMakeFiles/main.dir/all
-cpp-api/all: cpp-api/api/all
-cpp-api/all: cpp-api/cupslib/all
-cpp-api/all: cpp-api/generatelib/all
-cpp-api/all: cpp-api/httplib/all
-cpp-api/all: cpp-api/jsonlib/all
-cpp-api/all: cpp-api/testing/all
-cpp-api/all: cpp-api/utility/all
-.PHONY : cpp-api/all
+src/all: src/CMakeFiles/main.dir/all
+src/all: src/api/all
+src/all: src/cupslib/all
+src/all: src/generatelib/all
+src/all: src/httplib/all
+src/all: src/jsonlib/all
+src/all: src/testing/all
+src/all: src/utility/all
+.PHONY : src/all
 
 # Recursive "preinstall" directory target.
-cpp-api/preinstall: cpp-api/api/preinstall
-cpp-api/preinstall: cpp-api/cupslib/preinstall
-cpp-api/preinstall: cpp-api/generatelib/preinstall
-cpp-api/preinstall: cpp-api/httplib/preinstall
-cpp-api/preinstall: cpp-api/jsonlib/preinstall
-cpp-api/preinstall: cpp-api/testing/preinstall
-cpp-api/preinstall: cpp-api/utility/preinstall
-.PHONY : cpp-api/preinstall
+src/preinstall: src/api/preinstall
+src/preinstall: src/cupslib/preinstall
+src/preinstall: src/generatelib/preinstall
+src/preinstall: src/httplib/preinstall
+src/preinstall: src/jsonlib/preinstall
+src/preinstall: src/testing/preinstall
+src/preinstall: src/utility/preinstall
+.PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-cpp-api/clean: cpp-api/CMakeFiles/main.dir/clean
-cpp-api/clean: cpp-api/api/clean
-cpp-api/clean: cpp-api/cupslib/clean
-cpp-api/clean: cpp-api/generatelib/clean
-cpp-api/clean: cpp-api/httplib/clean
-cpp-api/clean: cpp-api/jsonlib/clean
-cpp-api/clean: cpp-api/testing/clean
-cpp-api/clean: cpp-api/utility/clean
-.PHONY : cpp-api/clean
+src/clean: src/CMakeFiles/main.dir/clean
+src/clean: src/api/clean
+src/clean: src/cupslib/clean
+src/clean: src/generatelib/clean
+src/clean: src/httplib/clean
+src/clean: src/jsonlib/clean
+src/clean: src/testing/clean
+src/clean: src/utility/clean
+.PHONY : src/clean
 
 #=============================================================================
-# Directory level rules for directory cpp-api/api
+# Directory level rules for directory src/api
 
 # Recursive "all" directory target.
-cpp-api/api/all: cpp-api/api/CMakeFiles/api.dir/all
-.PHONY : cpp-api/api/all
+src/api/all: src/api/CMakeFiles/api.dir/all
+.PHONY : src/api/all
 
 # Recursive "preinstall" directory target.
-cpp-api/api/preinstall:
-.PHONY : cpp-api/api/preinstall
+src/api/preinstall:
+.PHONY : src/api/preinstall
 
 # Recursive "clean" directory target.
-cpp-api/api/clean: cpp-api/api/CMakeFiles/api.dir/clean
-.PHONY : cpp-api/api/clean
+src/api/clean: src/api/CMakeFiles/api.dir/clean
+.PHONY : src/api/clean
 
 #=============================================================================
-# Directory level rules for directory cpp-api/cupslib
+# Directory level rules for directory src/cupslib
 
 # Recursive "all" directory target.
-cpp-api/cupslib/all: cpp-api/cupslib/CMakeFiles/cupslib.dir/all
-.PHONY : cpp-api/cupslib/all
+src/cupslib/all: src/cupslib/CMakeFiles/cupslib.dir/all
+.PHONY : src/cupslib/all
 
 # Recursive "preinstall" directory target.
-cpp-api/cupslib/preinstall:
-.PHONY : cpp-api/cupslib/preinstall
+src/cupslib/preinstall:
+.PHONY : src/cupslib/preinstall
 
 # Recursive "clean" directory target.
-cpp-api/cupslib/clean: cpp-api/cupslib/CMakeFiles/cupslib.dir/clean
-.PHONY : cpp-api/cupslib/clean
+src/cupslib/clean: src/cupslib/CMakeFiles/cupslib.dir/clean
+.PHONY : src/cupslib/clean
 
 #=============================================================================
-# Directory level rules for directory cpp-api/generatelib
+# Directory level rules for directory src/generatelib
 
 # Recursive "all" directory target.
-cpp-api/generatelib/all: cpp-api/generatelib/CMakeFiles/generatelib.dir/all
-.PHONY : cpp-api/generatelib/all
+src/generatelib/all: src/generatelib/CMakeFiles/generatelib.dir/all
+.PHONY : src/generatelib/all
 
 # Recursive "preinstall" directory target.
-cpp-api/generatelib/preinstall:
-.PHONY : cpp-api/generatelib/preinstall
+src/generatelib/preinstall:
+.PHONY : src/generatelib/preinstall
 
 # Recursive "clean" directory target.
-cpp-api/generatelib/clean: cpp-api/generatelib/CMakeFiles/generatelib.dir/clean
-.PHONY : cpp-api/generatelib/clean
+src/generatelib/clean: src/generatelib/CMakeFiles/generatelib.dir/clean
+.PHONY : src/generatelib/clean
 
 #=============================================================================
-# Directory level rules for directory cpp-api/httplib
+# Directory level rules for directory src/httplib
 
 # Recursive "all" directory target.
-cpp-api/httplib/all: cpp-api/httplib/CMakeFiles/httplib.dir/all
-.PHONY : cpp-api/httplib/all
+src/httplib/all: src/httplib/CMakeFiles/httplib.dir/all
+.PHONY : src/httplib/all
 
 # Recursive "preinstall" directory target.
-cpp-api/httplib/preinstall:
-.PHONY : cpp-api/httplib/preinstall
+src/httplib/preinstall:
+.PHONY : src/httplib/preinstall
 
 # Recursive "clean" directory target.
-cpp-api/httplib/clean: cpp-api/httplib/CMakeFiles/httplib.dir/clean
-.PHONY : cpp-api/httplib/clean
+src/httplib/clean: src/httplib/CMakeFiles/httplib.dir/clean
+.PHONY : src/httplib/clean
 
 #=============================================================================
-# Directory level rules for directory cpp-api/jsonlib
+# Directory level rules for directory src/jsonlib
 
 # Recursive "all" directory target.
-cpp-api/jsonlib/all: cpp-api/jsonlib/CMakeFiles/jsonlib.dir/all
-.PHONY : cpp-api/jsonlib/all
+src/jsonlib/all: src/jsonlib/CMakeFiles/jsonlib.dir/all
+.PHONY : src/jsonlib/all
 
 # Recursive "preinstall" directory target.
-cpp-api/jsonlib/preinstall:
-.PHONY : cpp-api/jsonlib/preinstall
+src/jsonlib/preinstall:
+.PHONY : src/jsonlib/preinstall
 
 # Recursive "clean" directory target.
-cpp-api/jsonlib/clean: cpp-api/jsonlib/CMakeFiles/jsonlib.dir/clean
-.PHONY : cpp-api/jsonlib/clean
+src/jsonlib/clean: src/jsonlib/CMakeFiles/jsonlib.dir/clean
+.PHONY : src/jsonlib/clean
 
 #=============================================================================
-# Directory level rules for directory cpp-api/testing
+# Directory level rules for directory src/testing
 
 # Recursive "all" directory target.
-cpp-api/testing/all: cpp-api/testing/CMakeFiles/testing.dir/all
-.PHONY : cpp-api/testing/all
+src/testing/all: src/testing/CMakeFiles/testing.dir/all
+.PHONY : src/testing/all
 
 # Recursive "preinstall" directory target.
-cpp-api/testing/preinstall:
-.PHONY : cpp-api/testing/preinstall
+src/testing/preinstall:
+.PHONY : src/testing/preinstall
 
 # Recursive "clean" directory target.
-cpp-api/testing/clean: cpp-api/testing/CMakeFiles/testing.dir/clean
-.PHONY : cpp-api/testing/clean
+src/testing/clean: src/testing/CMakeFiles/testing.dir/clean
+.PHONY : src/testing/clean
 
 #=============================================================================
-# Directory level rules for directory cpp-api/utility
+# Directory level rules for directory src/utility
 
 # Recursive "all" directory target.
-cpp-api/utility/all: cpp-api/utility/CMakeFiles/utility.dir/all
-.PHONY : cpp-api/utility/all
+src/utility/all: src/utility/CMakeFiles/utility.dir/all
+.PHONY : src/utility/all
 
 # Recursive "preinstall" directory target.
-cpp-api/utility/preinstall:
-.PHONY : cpp-api/utility/preinstall
+src/utility/preinstall:
+.PHONY : src/utility/preinstall
 
 # Recursive "clean" directory target.
-cpp-api/utility/clean: cpp-api/utility/CMakeFiles/utility.dir/clean
-.PHONY : cpp-api/utility/clean
+src/utility/clean: src/utility/CMakeFiles/utility.dir/clean
+.PHONY : src/utility/clean
 
 #=============================================================================
-# Target rules for target cpp-api/CMakeFiles/main.dir
+# Target rules for target src/CMakeFiles/main.dir
 
 # All Build rule for target.
-cpp-api/CMakeFiles/main.dir/all: cpp-api/api/CMakeFiles/api.dir/all
-cpp-api/CMakeFiles/main.dir/all: cpp-api/cupslib/CMakeFiles/cupslib.dir/all
-cpp-api/CMakeFiles/main.dir/all: cpp-api/generatelib/CMakeFiles/generatelib.dir/all
-cpp-api/CMakeFiles/main.dir/all: cpp-api/httplib/CMakeFiles/httplib.dir/all
-cpp-api/CMakeFiles/main.dir/all: cpp-api/jsonlib/CMakeFiles/jsonlib.dir/all
-cpp-api/CMakeFiles/main.dir/all: cpp-api/testing/CMakeFiles/testing.dir/all
-cpp-api/CMakeFiles/main.dir/all: cpp-api/utility/CMakeFiles/utility.dir/all
-	$(MAKE) $(MAKESILENT) -f cpp-api/CMakeFiles/main.dir/build.make cpp-api/CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f cpp-api/CMakeFiles/main.dir/build.make cpp-api/CMakeFiles/main.dir/build
+src/CMakeFiles/main.dir/all: src/api/CMakeFiles/api.dir/all
+src/CMakeFiles/main.dir/all: src/cupslib/CMakeFiles/cupslib.dir/all
+src/CMakeFiles/main.dir/all: src/generatelib/CMakeFiles/generatelib.dir/all
+src/CMakeFiles/main.dir/all: src/httplib/CMakeFiles/httplib.dir/all
+src/CMakeFiles/main.dir/all: src/jsonlib/CMakeFiles/jsonlib.dir/all
+src/CMakeFiles/main.dir/all: src/testing/CMakeFiles/testing.dir/all
+src/CMakeFiles/main.dir/all: src/utility/CMakeFiles/utility.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=10,11 "Built target main"
-.PHONY : cpp-api/CMakeFiles/main.dir/all
+.PHONY : src/CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-cpp-api/CMakeFiles/main.dir/rule: cmake_check_build_system
+src/CMakeFiles/main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-api/CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 0
-.PHONY : cpp-api/CMakeFiles/main.dir/rule
+.PHONY : src/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-main: cpp-api/CMakeFiles/main.dir/rule
+main: src/CMakeFiles/main.dir/rule
 .PHONY : main
 
 # clean rule for target.
-cpp-api/CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cpp-api/CMakeFiles/main.dir/build.make cpp-api/CMakeFiles/main.dir/clean
-.PHONY : cpp-api/CMakeFiles/main.dir/clean
+src/CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/clean
+.PHONY : src/CMakeFiles/main.dir/clean
 
 #=============================================================================
-# Target rules for target cpp-api/api/CMakeFiles/api.dir
+# Target rules for target src/api/CMakeFiles/api.dir
 
 # All Build rule for target.
-cpp-api/api/CMakeFiles/api.dir/all:
-	$(MAKE) $(MAKESILENT) -f cpp-api/api/CMakeFiles/api.dir/build.make cpp-api/api/CMakeFiles/api.dir/depend
-	$(MAKE) $(MAKESILENT) -f cpp-api/api/CMakeFiles/api.dir/build.make cpp-api/api/CMakeFiles/api.dir/build
+src/api/CMakeFiles/api.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/api/CMakeFiles/api.dir/build.make src/api/CMakeFiles/api.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/api/CMakeFiles/api.dir/build.make src/api/CMakeFiles/api.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=1,2 "Built target api"
-.PHONY : cpp-api/api/CMakeFiles/api.dir/all
+.PHONY : src/api/CMakeFiles/api.dir/all
 
 # Build rule for subdir invocation for target.
-cpp-api/api/CMakeFiles/api.dir/rule: cmake_check_build_system
+src/api/CMakeFiles/api.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-api/api/CMakeFiles/api.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/api/CMakeFiles/api.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 0
-.PHONY : cpp-api/api/CMakeFiles/api.dir/rule
+.PHONY : src/api/CMakeFiles/api.dir/rule
 
 # Convenience name for target.
-api: cpp-api/api/CMakeFiles/api.dir/rule
+api: src/api/CMakeFiles/api.dir/rule
 .PHONY : api
 
 # clean rule for target.
-cpp-api/api/CMakeFiles/api.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cpp-api/api/CMakeFiles/api.dir/build.make cpp-api/api/CMakeFiles/api.dir/clean
-.PHONY : cpp-api/api/CMakeFiles/api.dir/clean
+src/api/CMakeFiles/api.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/api/CMakeFiles/api.dir/build.make src/api/CMakeFiles/api.dir/clean
+.PHONY : src/api/CMakeFiles/api.dir/clean
 
 #=============================================================================
-# Target rules for target cpp-api/cupslib/CMakeFiles/cupslib.dir
+# Target rules for target src/cupslib/CMakeFiles/cupslib.dir
 
 # All Build rule for target.
-cpp-api/cupslib/CMakeFiles/cupslib.dir/all:
-	$(MAKE) $(MAKESILENT) -f cpp-api/cupslib/CMakeFiles/cupslib.dir/build.make cpp-api/cupslib/CMakeFiles/cupslib.dir/depend
-	$(MAKE) $(MAKESILENT) -f cpp-api/cupslib/CMakeFiles/cupslib.dir/build.make cpp-api/cupslib/CMakeFiles/cupslib.dir/build
+src/cupslib/CMakeFiles/cupslib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/cupslib/CMakeFiles/cupslib.dir/build.make src/cupslib/CMakeFiles/cupslib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/cupslib/CMakeFiles/cupslib.dir/build.make src/cupslib/CMakeFiles/cupslib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=3,4 "Built target cupslib"
-.PHONY : cpp-api/cupslib/CMakeFiles/cupslib.dir/all
+.PHONY : src/cupslib/CMakeFiles/cupslib.dir/all
 
 # Build rule for subdir invocation for target.
-cpp-api/cupslib/CMakeFiles/cupslib.dir/rule: cmake_check_build_system
+src/cupslib/CMakeFiles/cupslib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-api/cupslib/CMakeFiles/cupslib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/cupslib/CMakeFiles/cupslib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 0
-.PHONY : cpp-api/cupslib/CMakeFiles/cupslib.dir/rule
+.PHONY : src/cupslib/CMakeFiles/cupslib.dir/rule
 
 # Convenience name for target.
-cupslib: cpp-api/cupslib/CMakeFiles/cupslib.dir/rule
+cupslib: src/cupslib/CMakeFiles/cupslib.dir/rule
 .PHONY : cupslib
 
 # clean rule for target.
-cpp-api/cupslib/CMakeFiles/cupslib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cpp-api/cupslib/CMakeFiles/cupslib.dir/build.make cpp-api/cupslib/CMakeFiles/cupslib.dir/clean
-.PHONY : cpp-api/cupslib/CMakeFiles/cupslib.dir/clean
+src/cupslib/CMakeFiles/cupslib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/cupslib/CMakeFiles/cupslib.dir/build.make src/cupslib/CMakeFiles/cupslib.dir/clean
+.PHONY : src/cupslib/CMakeFiles/cupslib.dir/clean
 
 #=============================================================================
-# Target rules for target cpp-api/generatelib/CMakeFiles/generatelib.dir
+# Target rules for target src/generatelib/CMakeFiles/generatelib.dir
 
 # All Build rule for target.
-cpp-api/generatelib/CMakeFiles/generatelib.dir/all:
-	$(MAKE) $(MAKESILENT) -f cpp-api/generatelib/CMakeFiles/generatelib.dir/build.make cpp-api/generatelib/CMakeFiles/generatelib.dir/depend
-	$(MAKE) $(MAKESILENT) -f cpp-api/generatelib/CMakeFiles/generatelib.dir/build.make cpp-api/generatelib/CMakeFiles/generatelib.dir/build
+src/generatelib/CMakeFiles/generatelib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/generatelib/CMakeFiles/generatelib.dir/build.make src/generatelib/CMakeFiles/generatelib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/generatelib/CMakeFiles/generatelib.dir/build.make src/generatelib/CMakeFiles/generatelib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=5,6 "Built target generatelib"
-.PHONY : cpp-api/generatelib/CMakeFiles/generatelib.dir/all
+.PHONY : src/generatelib/CMakeFiles/generatelib.dir/all
 
 # Build rule for subdir invocation for target.
-cpp-api/generatelib/CMakeFiles/generatelib.dir/rule: cmake_check_build_system
+src/generatelib/CMakeFiles/generatelib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-api/generatelib/CMakeFiles/generatelib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/generatelib/CMakeFiles/generatelib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 0
-.PHONY : cpp-api/generatelib/CMakeFiles/generatelib.dir/rule
+.PHONY : src/generatelib/CMakeFiles/generatelib.dir/rule
 
 # Convenience name for target.
-generatelib: cpp-api/generatelib/CMakeFiles/generatelib.dir/rule
+generatelib: src/generatelib/CMakeFiles/generatelib.dir/rule
 .PHONY : generatelib
 
 # clean rule for target.
-cpp-api/generatelib/CMakeFiles/generatelib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cpp-api/generatelib/CMakeFiles/generatelib.dir/build.make cpp-api/generatelib/CMakeFiles/generatelib.dir/clean
-.PHONY : cpp-api/generatelib/CMakeFiles/generatelib.dir/clean
+src/generatelib/CMakeFiles/generatelib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/generatelib/CMakeFiles/generatelib.dir/build.make src/generatelib/CMakeFiles/generatelib.dir/clean
+.PHONY : src/generatelib/CMakeFiles/generatelib.dir/clean
 
 #=============================================================================
-# Target rules for target cpp-api/httplib/CMakeFiles/httplib.dir
+# Target rules for target src/httplib/CMakeFiles/httplib.dir
 
 # All Build rule for target.
-cpp-api/httplib/CMakeFiles/httplib.dir/all:
-	$(MAKE) $(MAKESILENT) -f cpp-api/httplib/CMakeFiles/httplib.dir/build.make cpp-api/httplib/CMakeFiles/httplib.dir/depend
-	$(MAKE) $(MAKESILENT) -f cpp-api/httplib/CMakeFiles/httplib.dir/build.make cpp-api/httplib/CMakeFiles/httplib.dir/build
+src/httplib/CMakeFiles/httplib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/httplib/CMakeFiles/httplib.dir/build.make src/httplib/CMakeFiles/httplib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/httplib/CMakeFiles/httplib.dir/build.make src/httplib/CMakeFiles/httplib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=7 "Built target httplib"
-.PHONY : cpp-api/httplib/CMakeFiles/httplib.dir/all
+.PHONY : src/httplib/CMakeFiles/httplib.dir/all
 
 # Build rule for subdir invocation for target.
-cpp-api/httplib/CMakeFiles/httplib.dir/rule: cmake_check_build_system
+src/httplib/CMakeFiles/httplib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-api/httplib/CMakeFiles/httplib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/httplib/CMakeFiles/httplib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 0
-.PHONY : cpp-api/httplib/CMakeFiles/httplib.dir/rule
+.PHONY : src/httplib/CMakeFiles/httplib.dir/rule
 
 # Convenience name for target.
-httplib: cpp-api/httplib/CMakeFiles/httplib.dir/rule
+httplib: src/httplib/CMakeFiles/httplib.dir/rule
 .PHONY : httplib
 
 # clean rule for target.
-cpp-api/httplib/CMakeFiles/httplib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cpp-api/httplib/CMakeFiles/httplib.dir/build.make cpp-api/httplib/CMakeFiles/httplib.dir/clean
-.PHONY : cpp-api/httplib/CMakeFiles/httplib.dir/clean
+src/httplib/CMakeFiles/httplib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/httplib/CMakeFiles/httplib.dir/build.make src/httplib/CMakeFiles/httplib.dir/clean
+.PHONY : src/httplib/CMakeFiles/httplib.dir/clean
 
 #=============================================================================
-# Target rules for target cpp-api/jsonlib/CMakeFiles/jsonlib.dir
+# Target rules for target src/jsonlib/CMakeFiles/jsonlib.dir
 
 # All Build rule for target.
-cpp-api/jsonlib/CMakeFiles/jsonlib.dir/all:
-	$(MAKE) $(MAKESILENT) -f cpp-api/jsonlib/CMakeFiles/jsonlib.dir/build.make cpp-api/jsonlib/CMakeFiles/jsonlib.dir/depend
-	$(MAKE) $(MAKESILENT) -f cpp-api/jsonlib/CMakeFiles/jsonlib.dir/build.make cpp-api/jsonlib/CMakeFiles/jsonlib.dir/build
+src/jsonlib/CMakeFiles/jsonlib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/jsonlib/CMakeFiles/jsonlib.dir/build.make src/jsonlib/CMakeFiles/jsonlib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/jsonlib/CMakeFiles/jsonlib.dir/build.make src/jsonlib/CMakeFiles/jsonlib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=8,9 "Built target jsonlib"
-.PHONY : cpp-api/jsonlib/CMakeFiles/jsonlib.dir/all
+.PHONY : src/jsonlib/CMakeFiles/jsonlib.dir/all
 
 # Build rule for subdir invocation for target.
-cpp-api/jsonlib/CMakeFiles/jsonlib.dir/rule: cmake_check_build_system
+src/jsonlib/CMakeFiles/jsonlib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-api/jsonlib/CMakeFiles/jsonlib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/jsonlib/CMakeFiles/jsonlib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 0
-.PHONY : cpp-api/jsonlib/CMakeFiles/jsonlib.dir/rule
+.PHONY : src/jsonlib/CMakeFiles/jsonlib.dir/rule
 
 # Convenience name for target.
-jsonlib: cpp-api/jsonlib/CMakeFiles/jsonlib.dir/rule
+jsonlib: src/jsonlib/CMakeFiles/jsonlib.dir/rule
 .PHONY : jsonlib
 
 # clean rule for target.
-cpp-api/jsonlib/CMakeFiles/jsonlib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cpp-api/jsonlib/CMakeFiles/jsonlib.dir/build.make cpp-api/jsonlib/CMakeFiles/jsonlib.dir/clean
-.PHONY : cpp-api/jsonlib/CMakeFiles/jsonlib.dir/clean
+src/jsonlib/CMakeFiles/jsonlib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/jsonlib/CMakeFiles/jsonlib.dir/build.make src/jsonlib/CMakeFiles/jsonlib.dir/clean
+.PHONY : src/jsonlib/CMakeFiles/jsonlib.dir/clean
 
 #=============================================================================
-# Target rules for target cpp-api/testing/CMakeFiles/testing.dir
+# Target rules for target src/testing/CMakeFiles/testing.dir
 
 # All Build rule for target.
-cpp-api/testing/CMakeFiles/testing.dir/all:
-	$(MAKE) $(MAKESILENT) -f cpp-api/testing/CMakeFiles/testing.dir/build.make cpp-api/testing/CMakeFiles/testing.dir/depend
-	$(MAKE) $(MAKESILENT) -f cpp-api/testing/CMakeFiles/testing.dir/build.make cpp-api/testing/CMakeFiles/testing.dir/build
+src/testing/CMakeFiles/testing.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/testing/CMakeFiles/testing.dir/build.make src/testing/CMakeFiles/testing.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/testing/CMakeFiles/testing.dir/build.make src/testing/CMakeFiles/testing.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=12,13 "Built target testing"
-.PHONY : cpp-api/testing/CMakeFiles/testing.dir/all
+.PHONY : src/testing/CMakeFiles/testing.dir/all
 
 # Build rule for subdir invocation for target.
-cpp-api/testing/CMakeFiles/testing.dir/rule: cmake_check_build_system
+src/testing/CMakeFiles/testing.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-api/testing/CMakeFiles/testing.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/testing/CMakeFiles/testing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 0
-.PHONY : cpp-api/testing/CMakeFiles/testing.dir/rule
+.PHONY : src/testing/CMakeFiles/testing.dir/rule
 
 # Convenience name for target.
-testing: cpp-api/testing/CMakeFiles/testing.dir/rule
+testing: src/testing/CMakeFiles/testing.dir/rule
 .PHONY : testing
 
 # clean rule for target.
-cpp-api/testing/CMakeFiles/testing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cpp-api/testing/CMakeFiles/testing.dir/build.make cpp-api/testing/CMakeFiles/testing.dir/clean
-.PHONY : cpp-api/testing/CMakeFiles/testing.dir/clean
+src/testing/CMakeFiles/testing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/testing/CMakeFiles/testing.dir/build.make src/testing/CMakeFiles/testing.dir/clean
+.PHONY : src/testing/CMakeFiles/testing.dir/clean
 
 #=============================================================================
-# Target rules for target cpp-api/utility/CMakeFiles/utility.dir
+# Target rules for target src/utility/CMakeFiles/utility.dir
 
 # All Build rule for target.
-cpp-api/utility/CMakeFiles/utility.dir/all:
-	$(MAKE) $(MAKESILENT) -f cpp-api/utility/CMakeFiles/utility.dir/build.make cpp-api/utility/CMakeFiles/utility.dir/depend
-	$(MAKE) $(MAKESILENT) -f cpp-api/utility/CMakeFiles/utility.dir/build.make cpp-api/utility/CMakeFiles/utility.dir/build
+src/utility/CMakeFiles/utility.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/utility/CMakeFiles/utility.dir/build.make src/utility/CMakeFiles/utility.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/utility/CMakeFiles/utility.dir/build.make src/utility/CMakeFiles/utility.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles --progress-num=14,15 "Built target utility"
-.PHONY : cpp-api/utility/CMakeFiles/utility.dir/all
+.PHONY : src/utility/CMakeFiles/utility.dir/all
 
 # Build rule for subdir invocation for target.
-cpp-api/utility/CMakeFiles/utility.dir/rule: cmake_check_build_system
+src/utility/CMakeFiles/utility.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-api/utility/CMakeFiles/utility.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/utility/CMakeFiles/utility.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ellie/git/auxline/zpl-server/cpp-api/build/CMakeFiles 0
-.PHONY : cpp-api/utility/CMakeFiles/utility.dir/rule
+.PHONY : src/utility/CMakeFiles/utility.dir/rule
 
 # Convenience name for target.
-utility: cpp-api/utility/CMakeFiles/utility.dir/rule
+utility: src/utility/CMakeFiles/utility.dir/rule
 .PHONY : utility
 
 # clean rule for target.
-cpp-api/utility/CMakeFiles/utility.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cpp-api/utility/CMakeFiles/utility.dir/build.make cpp-api/utility/CMakeFiles/utility.dir/clean
-.PHONY : cpp-api/utility/CMakeFiles/utility.dir/clean
+src/utility/CMakeFiles/utility.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/utility/CMakeFiles/utility.dir/build.make src/utility/CMakeFiles/utility.dir/clean
+.PHONY : src/utility/CMakeFiles/utility.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
